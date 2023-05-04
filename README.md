@@ -4,3 +4,14 @@
 
 ##### 2023-04-14 일기쓰기, 공지사항, 공개일기장, 로그인/회원가입 기능이 포함된 flask 파일 넣음 (채원)
 ##### 2023-05-04 Amazon Lightsail로 서버 공개를 위한 repository 생성
+
+
+#### 2023-05-04 실험
+amazon lightsail : ubuntu 무료버전 라이트세일 고정 IP 주소 : 43.200.159.39
+flask를 받아들이질 못함
+![image](https://user-images.githubusercontent.com/114221089/236109892-09b0e7fb-82ef-4027-8f8a-079f61b7eb01.png)
+
+AWS EC2 : t2.micro(무료버전)(ubuntu) 
+CPU 가용률 99% 이상으로 flask를 받아들이질 못함
+> torch, transformer, torch library
+![image](https://user-images.githubusercontent.com/114221089/236109639-3d24b224-3437-4658-bfea-b623245e248e.png)
