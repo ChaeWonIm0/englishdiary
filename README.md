@@ -12,6 +12,10 @@ flask를 받아들이질 못함
 ### "killed"
 ![image](https://user-images.githubusercontent.com/114221089/236110364-b4756e50-4b26-488d-a248-d4748725e582.png)
 
+### cpu가 2배 큰 ubuntu를 구매해도 20분간 중지
+![image](https://user-images.githubusercontent.com/114221089/236157896-b8d2799d-6e80-4f76-89b8-8e3a194658a1.png)
+
+
 AWS EC2 : t2.micro(무료버전)(ubuntu) 
 CPU 가용률 99% 이상으로 flask를 받아들이질 못함
 > torch, transformer, torch library
