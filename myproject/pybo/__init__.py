@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from sqlalchemy import MetaData
-import config
+# import config
 from flaskext.markdown import Markdown
 
 naming_convention = {
@@ -21,7 +21,10 @@ def create_app():
     app = Flask(__name__)  # flask 뷰 기본
     
     # ORM을 적용하기 위해서 SQLite와 SQLAlchemy 사용
-    app.config.from_object(config)
+    # app.config.from_object(config)
+
+    # 환경변수 APP_CONFIG_FILE에서 정의된 파일을 환경파일로 사용
+    app.config.from_envvar('APP_CONFIG_FILE')
 
     #  ORM
     db.init_app(app)
@@ -52,16 +55,16 @@ def create_app():
     Markdown(app, extensions=['nl2br', 'fenced_code'])
 
     # 구글 소셜 로그인
-    # from flask_dance.contrib.google import make_google_blueprint, google
-    #
-    # google_bp = make_google_blueprint(
-    #     client_id="136279422951-4nr61veh2kajbg1tcqaggnc7uqh1hl38.apps.googleusercontent.com",
-    #     client_secret="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",
-    #     scope=["profile", "email"],
-    #     offline=True,
-    #     redirect_to="google.login",
-    # )
-    # app.register_blueprint(google_bp, url_prefix="/login")
+    from flask_dance.contrib.google import make_google_blueprint, google
+
+    google_bp = make_google_blueprint(
+        client_id="136279422951-4nr61veh2kajbg1tcqaggnc7uqh1hl38.apps.googleusercontent.com",
+        client_secret="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",
+        scope=["profile", "email"],
+        offline=True,
+        redirect_to="google.login",
+    )
+    app.register_blueprint(google_bp, url_prefix="/login")
 
     from .models import User
     # flask-login 적용
