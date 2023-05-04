@@ -52,16 +52,16 @@ def create_app():
     Markdown(app, extensions=['nl2br', 'fenced_code'])
 
     # 구글 소셜 로그인
-    from flask_dance.contrib.google import make_google_blueprint, google
-
-    google_bp = make_google_blueprint(
-        client_id="136279422951-4nr61veh2kajbg1tcqaggnc7uqh1hl38.apps.googleusercontent.com",
-        client_secret="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",
-        scope=["profile", "email"],
-        offline=True,
-        redirect_to="google.login",
-    )
-    app.register_blueprint(google_bp, url_prefix="/login")
+    # from flask_dance.contrib.google import make_google_blueprint, google
+    #
+    # google_bp = make_google_blueprint(
+    #     client_id="136279422951-4nr61veh2kajbg1tcqaggnc7uqh1hl38.apps.googleusercontent.com",
+    #     client_secret="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",
+    #     scope=["profile", "email"],
+    #     offline=True,
+    #     redirect_to="google.login",
+    # )
+    # app.register_blueprint(google_bp, url_prefix="/login")
 
     from .models import User
     # flask-login 적용
