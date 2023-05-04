@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from sqlalchemy import MetaData
-import config
+# import config
 from flaskext.markdown import Markdown
 
 naming_convention = {
@@ -21,10 +21,10 @@ def create_app():
     app = Flask(__name__)  # flask 뷰 기본
     
     # ORM을 적용하기 위해서 SQLite와 SQLAlchemy 사용
-    app.config.from_object(config)
+    # app.config.from_object(config)
 
     # 환경변수 APP_CONFIG_FILE에서 정의된 파일을 환경파일로 사용
-    # app.config.from_envvar('APP_CONFIG_FILE')
+    app.config.from_envvar('APP_CONFIG_FILE')
 
     #  ORM
     db.init_app(app)
