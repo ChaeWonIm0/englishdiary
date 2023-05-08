@@ -85,7 +85,7 @@ from flask import Markup
 @grammar.route('/correct_grammar', methods=['POST', 'GET'])
 def correct_grammar_api():
     # 단락별로 저장
-    # 태그 없고, 실행시간만 계산한 코드
+    # 비회원이 문법 검토할 때 사용하는 코드
     if 'review_0' in request.form:
         sentence = request.form['sentence']
         corrected_sentence = correct_grammar(sentence)
@@ -113,7 +113,7 @@ def correct_grammar_api():
                                corrected_sentence=corrected_sentence,
                                highlighted_diff=highlighted_diff) # tags 지움, 실행시간 추가
 
-    # 태그 있고, 시간 표시 + form_detail에 시간은 저장하지 않는 코드
+    # 회원이 문법 검토할 때 사용하는 코드
     elif 'review' in request.form:
         start_time = time.time()  # correction_grammar 시작시간 저장
         sentence = request.form['sentence']
