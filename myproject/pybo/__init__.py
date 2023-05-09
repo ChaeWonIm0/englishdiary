@@ -35,7 +35,8 @@ def create_app():
     from . import models
 
     # 블루프린트로 라우팅함수 관리함
-    from .views import main_views, diary_views, answer_views, auth_views, query, notice_views, tts, grammar, tag, profile_views
+    # from .views import main_views, diary_views, answer_views, auth_views, query, notice_views, tts, grammar, tag, profile_views
+    from .views import main_views, diary_views, answer_views, auth_views,notice_views,grammar,profile_views
     app.register_blueprint(main_views.bp)
     # 블루프린트에 diary_views도 적용
     app.register_blueprint(diary_views.bp)
@@ -44,7 +45,7 @@ def create_app():
     # 회원가입 기능을 위한 블루프린트 등록
     app.register_blueprint(auth_views.bp)
     app.register_blueprint(notice_views.bp)
-    app.register_blueprint(tts.bp)
+    # app.register_blueprint(tts.bp)
     app.register_blueprint(grammar.grammar)
     app.register_blueprint(profile_views.bp)
     # 필터

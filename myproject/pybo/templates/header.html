@@ -11,27 +11,27 @@
     </div><!-- End Logo -->
 
         <li class="nav-link">
-          <a class="nav-link" href="{{ url_for('diary.instruction') }}">
-            <span class="d-none d-lg-block" >사용설명서</span>
+          <a class="nav-link" href="{{ url_for('notice.noticelist') }}">
+            <span class="d-none d-lg-block" >공지사항</span>
           </a>
           </li>
           <!-- End 사용설명서 page Nav -->
 
           <li class="nav-link">
-            <a class="nav-link" href="{{ url_for('diary.create') }}">
-              <span class="d-none d-lg-block">일기쓰기</span>
+            <a class="nav-link" href="{{ url_for('diary.instruction') }}">
+              <span class="d-none d-lg-block">사용설명서</span>
             </a>
           </li><!-- End 일기쓰기 Page Nav -->
 
           <li class="nav-link">
-            <a class="nav-link" href="{{ url_for('notice.noticelist') }}">
-              <span class="d-none d-lg-block">공지사항</span>
+            <a class="nav-link" href="{{ url_for('diary._list') }}">
+              <span class="d-none d-lg-block">공개일기장</span>
             </a>
           </li><!-- End 공지사항 Page Nav -->
 
           <li class="nav-link">
-            <a class="nav-link" href="{{ url_for('diary._list') }}">
-              <span class="d-none d-lg-block">공개일기장</span>
+            <a class="nav-link" href="{{ url_for('diary.create') }}">
+              <span class="d-none d-lg-block">일기쓰기</span>
             </a>
           </li><!-- End 공개일기장 Page Nav -->
 <!--영어 일기 제외-->
@@ -112,20 +112,20 @@
         <a class="nav-link collapsed" href="{{ url_for('notice.noticelist') }}">
           <span>공지사항</span>
         </a>
-      </li><!-- End 일기쓰기 Page Nav -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url_for('diary.create') }}">
-          <span>일기쓰기</span>
-        </a>
-      </li><!-- End 일기쓰기 Page Nav -->
+      </li><!-- End 사용설명서 Page Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url_for('diary.instruction') }}">
           <span>사용설명서</span>
         </a>
-      </li><!-- End 사용설명서 Page Nav -->
+      </li><!-- End 일기쓰기 Page Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url_for('diary._list') }}">
           <span>공개일기장</span>
+        </a>
+      </li><!-- End 공지사항 Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url_for('diary.create') }}">
+          <span>일기쓰기</span>
         </a>
       </li><!-- End 공개일기장 Nav -->
 <!--      <li class="nav-item">-->
