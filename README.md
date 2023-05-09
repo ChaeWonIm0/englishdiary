@@ -30,3 +30,5 @@ pytorch_model.bin 100% 이후로 진행 불가
 
 #### 2023-05-09 실험B
 lightsail 4GB(20$ 버전)으로 사용 시도
+![image](https://user-images.githubusercontent.com/114221089/236977560-41173804-5911-49e8-b117-a5ad437fe02f.png)
+killed
