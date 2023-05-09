@@ -47,3 +47,5 @@ lightsail 4GB(20$ 버전)으로 사용 시도
 ### 도커로 이동
 ![image](https://user-images.githubusercontent.com/114221089/237052505-e6fbf005-6c52-4ef0-a4b2-ee53518ca937.png)
 
+### 홈페이지 도커 오픈 성공
+![image](https://user-images.githubusercontent.com/114221089/237060539-8d0a2950-b9b4-4373-ada6-b68ca426f9a3.png)
