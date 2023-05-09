@@ -21,3 +21,12 @@ CPU 가용률 99% 이상으로 flask를 받아들이질 못함
 > torch, transformer, torch library
 ### "killed" 
 ![image](https://user-images.githubusercontent.com/114221089/236109639-3d24b224-3437-4658-bfea-b623245e248e.png)
+
+#### 2023-05-08 실험A
+lightsail 2GB 서버로 실행
+
+![image](https://user-images.githubusercontent.com/114221089/236973858-109dfba9-6287-4bfb-912e-9a9261e74c93.png)
+pytorch_model.bin 100% 이후로 진행 불가
+
+#### 2023-05-09 실험B
+lightsail 4GB(20$ 버전)으로 사용 시도
