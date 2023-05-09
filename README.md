@@ -25,13 +25,14 @@ CPU 가용률 99% 이상으로 flask를 받아들이질 못함
 #### 2023-05-08 실험A
 lightsail 2GB 서버로 실행
 
+### stop
 ![image](https://user-images.githubusercontent.com/114221089/236973858-109dfba9-6287-4bfb-912e-9a9261e74c93.png)
 pytorch_model.bin 100% 이후로 진행 불가
 
 #### 2023-05-09 실험B
 lightsail 4GB(20$ 버전)으로 사용 시도
 ![image](https://user-images.githubusercontent.com/114221089/236977560-41173804-5911-49e8-b117-a5ad437fe02f.png)
-killed
+### "killed"
 
 - 현재 실행중인 Gunicorn 프로세스에서 계속해서 "CRITICAL WORKER TIMEOUT" 메시지와 함께 Worker 프로세스가 종료되었다는 메시지가 출력되고 있습니다. 이러한 메시지는 Worker 프로세스가 응답하지 않거나 일정 시간 내에 작업을 완료하지 못했을 때 발생할 수 있습니다.
 
@@ -42,3 +43,7 @@ killed
 
 #### 2023-05-09 수정
 - navbar, sidebar의 제목 순서 변경 : 공지사항, 사용설명서, 공개일기장, 일기쓰기
+
+### 도커로 이동
+![image](https://user-images.githubusercontent.com/114221089/237052505-e6fbf005-6c52-4ef0-a4b2-ee53518ca937.png)
+
