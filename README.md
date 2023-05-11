@@ -49,3 +49,11 @@ lightsail 4GB(20$ 버전)으로 사용 시도
 
 ### 홈페이지 도커 오픈 성공
 ![image](https://user-images.githubusercontent.com/114221089/237060539-8d0a2950-b9b4-4373-ada6-b68ca426f9a3.png)
+
+
+### 230511 도커 테스트
+
+### 신원 미상의 접근 불가
+#### ex) 502 bad gateway, 504 gateway timeout 송출
+
+![image](https://github.com/ChaeWonIm0/englishdiary/assets/114221089/07addaf1-fc1e-48be-a8c4-c4557a4ded43)
