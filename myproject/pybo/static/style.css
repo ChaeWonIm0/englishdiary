@@ -1436,3 +1436,58 @@ h6 {
   #calendar {
     align-items : center;
   }
+
+.Calendar {
+    text-align: center;
+    margin: 15px;
+}
+
+.Calendar>thead>tr:first-child>td {
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+}
+
+.Calendar>thead>tr:last-child>td {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight : 600;
+}
+
+.Calendar>tbody>tr>td>p {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: flex;
+    width: flex;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}
+
+.pastDay{
+    color: lightgray;
+}
+
+.today {
+    background-color: #0086ff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.futureDay:hover{
+    background:#eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
