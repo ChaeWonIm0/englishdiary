@@ -171,10 +171,6 @@ def correct_grammar_api():
     #     db.session.add(diary)
     #     db.session.commit()
     #     return redirect(url_for('diary._list'))
-# def sentence_compare():
-#     input = request.form['sentence'].lower()
-#     before = input.split('.')
-#     output = correct_grammar(sentence)
 
 
 
