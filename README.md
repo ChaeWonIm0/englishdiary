@@ -57,3 +57,9 @@ lightsail 4GB(20$ 버전)으로 사용 시도
 #### ex) 502 bad gateway, 504 gateway timeout 송출
 
 ![image](https://github.com/ChaeWonIm0/englishdiary/assets/114221089/07addaf1-fc1e-48be-a8c4-c4557a4ded43)
+
+### 230512 docker 기록
+
+![image](https://github.com/ChaeWonIm0/englishdiary/assets/114221089/8d4ff3bc-9763-4983-ab46-6695aec70af2)
+
+#### EWS_diary 초기버전 서버 환경 가능
