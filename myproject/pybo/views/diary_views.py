@@ -141,7 +141,7 @@ def delete(diary_id):
 def vote(diary_id):
     _diary = Diary.query.get_or_404(diary_id)
     if g.user == _diary.user:
-        _diary.voter.append(g.user )
+        _diary.voter.append(g.user)
         if _diary.vote_count is None:
             _diary.vote_count = 0
         _diary.vote_count += 1
